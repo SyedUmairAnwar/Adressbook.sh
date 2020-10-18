@@ -103,7 +103,7 @@ function userEdit(){
 
 
 		read -p "enter the new dic " ndic
-                patd='^[a-zA-Z]$'
+                patd='^[a-zA-Z]{3,}$'
 		if [[ $ndic =~ $patd ]]
 		then
 		dist[$edit]=$ndic
